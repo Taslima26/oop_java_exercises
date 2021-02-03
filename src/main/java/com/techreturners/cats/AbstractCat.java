@@ -2,10 +2,13 @@ package com.techreturners.cats;
 
 public class AbstractCat implements Cat{
     private boolean isSleep=false;
-    private String catSetting="domestic";
+    private String catSetting;
+    private int avgHeight;
 
-    public  AbstractCat(boolean isSleep,String catSetting){
+    public  AbstractCat(boolean isSleep,String catSetting,int avgHeight){
         this.isSleep=isSleep;
+        this.catSetting=catSetting;
+        this.avgHeight=avgHeight;
     }
 
     public void goToSleep() {
@@ -24,4 +27,9 @@ public class AbstractCat implements Cat{
     public String getSetting(){
         return this.catSetting;
     }
+
+    public int getAverageHeight(){
+        return this.avgHeight;
+    }
+
 }
