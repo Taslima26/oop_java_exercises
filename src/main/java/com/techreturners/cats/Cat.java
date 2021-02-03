@@ -8,4 +8,6 @@ interface Cat {
 
     public boolean isAsleep();
 
+    public String getSetting();
+
 }
