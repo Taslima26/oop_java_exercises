@@ -10,4 +10,8 @@ interface Cat {
 
     public String getSetting();
 
+    public int getAverageHeight();
+
+    public String eat();
+
 }
